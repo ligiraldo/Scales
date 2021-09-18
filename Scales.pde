@@ -3,7 +3,8 @@ void setup(){
 }
   void scale(float x, float y){  
     stroke(255,255,255);
-    fill((float)(Math.random()*61)+100,(float)(Math.random()*13)+20,(float)(Math.random()*41)+200);
+    //fill((float)(Math.random()*61)+100,(float)(Math.random()*13)+20,(float)(Math.random()*41)+200);
+    fill(22,22,200);
     ellipse(x,y,50,50);
   }
   void bezier(float x, float y){
