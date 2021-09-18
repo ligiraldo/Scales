@@ -10,7 +10,7 @@ void setup(){
   void bezier(float x, float y){
     stroke(255,255,0);
     fill(255,255,0);
-    bezier(10+x, 20+y, 15+x,15+ y, 10+x, 30+y, 0, 0);
+    // bezier(10+x, 20+y, 15+x,15+ y, 10+x, 30+y, 0, 0);
   }
 void draw(){
 
