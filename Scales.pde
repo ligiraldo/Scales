@@ -7,17 +7,26 @@ void setup(){
     //fill(22,22,200);
     ellipse(x,y,50,50);
   }
-  void bezier(float x, float y){
-    stroke(255,255,0);
-    fill(255,255,0);
-    // bezier(10+x, 20+y, 15+x,15+ y, 10+x, 30+y, 0, 0);
+  void diamond(float x, float y){
+    fill(0,(float)(Math.random()*100)+155,(float)(Math.random()*100)+155);
+    beginShape();
+    vertex(0+x,0+y);
+    vertex(10+x,10+y);
+    vertex(0+x,20+y);
+    vertex(-10+x,10+y);
+    endShape(CLOSE);
   }
 void draw(){
 
   for(float i = 0; i <500 ; i+=45){
     for(float j = 0; j < 500;j+=45){
       scale(i,j);
-      bezier(i,j);
+      diamond(i,j);
+    }
+  }
+  for(float i = 0; i <500 ; i+=20){
+    for(float j = 0; j < 500;j+=20){
+      vertex(i,j);
     }
   }
 }
